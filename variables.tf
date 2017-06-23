@@ -3,6 +3,19 @@ variable "hostname_format" {
   default = "mattermost-%s"
 }
 
+variable "domain" {
+  default = "example.com"
+}
+
+/* cloudflare */
+variable "cloudflare_email" {
+  default = ""
+}
+
+variable "cloudflare_token" {
+  default = ""
+}
+
 /* digitalocean */
 
 variable "digitalocean_ssh_keys" {
