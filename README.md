@@ -47,5 +47,4 @@ TODO:
 -----
 
  - HTTPS
- - Firewall in the db
  - Create modules for each part - server and db.

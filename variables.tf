@@ -22,10 +22,6 @@ variable "digitalocean_ssh_keys" {
   default = []
 }
 
-variable "digitalocean_region" {
-  default = "nyc1"
-}
-
 variable "token" {}
 
 variable "hostname_database" {
