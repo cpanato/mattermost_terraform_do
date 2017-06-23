@@ -174,3 +174,12 @@ module "dns" {
   public_ip  = "${digitalocean_droplet.mattermost_server.ipv4_address}"
   hostname   = "${digitalocean_droplet.mattermost_server.name}"
 }
+
+module "firewall" {
+  source = "./security/ufw"
+
+  connection_db            = "${digitalocean_droplet.mattermost_db.ipv4_address}"
+  private_interface_db     = "${digitalocean_droplet.mattermost_db.ipv4_address_private}"
+  private_interface_server = "${digitalocean_droplet.mattermost_server.ipv4_address_private}"
+  connection_server        = "${digitalocean_droplet.mattermost_server.ipv4_address}"
+}
