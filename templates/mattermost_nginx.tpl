@@ -6,7 +6,7 @@ proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=mattermost_cache:10m max_
 
 server {
    listen 80;
-   server_name    ${mattermost_server};
+   server_name    example.com;
 
    location ~ /api/v[0-9]+/(users/)?websocket$ {
        proxy_set_header Upgrade $http_upgrade;

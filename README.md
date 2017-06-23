@@ -22,8 +22,14 @@ Change the initial team name
 
 ```bash
 set the enviroment variables:
-export TF_VAR_digitalocean_ssh_keys=<DO Token>
-expott TF_VAR_token='<ssh key>'
+# For Digital Ocean
+export TF_VAR_digitalocean_ssh_keys=<DO TOKEN>
+export TF_VAR_token='<ssh key>'
+
+# For Cloudflare
+export TF_VAR_cloudflare_token='<CF TOKEN>'
+export TF_VAR_cloudflare_email='<CF EMAIL>'
+
 
 After that check the terraform with plan
 $ terraform plan
@@ -40,7 +46,6 @@ Then grab the ip and access in the browser your new Mattermost server.
 TODO:
 -----
 
- - DNS name
  - HTTPS
  - Firewall in the db
  - Create modules for each part - server and db.

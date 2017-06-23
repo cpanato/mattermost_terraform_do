@@ -1,6 +1,6 @@
 {
     "ServiceSettings": {
-        "SiteURL": "http://${mattermost_server}:8065",
+        "SiteURL": "http://example.com",
         "LicenseFileLocation": "",
         "ListenAddress": ":8065",
         "ConnectionSecurity": "",

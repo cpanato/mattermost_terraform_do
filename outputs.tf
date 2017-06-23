@@ -5,3 +5,7 @@ output "mattermost_db" {
 output "mattermost_server" {
   value = "${digitalocean_droplet.mattermost_server.ipv4_address}"
 }
+
+output "DNS" {
+  value = "${module.dns.domains}"
+}
