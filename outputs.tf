@@ -1,9 +1,9 @@
 output "mattermost_db" {
-  value = "${digitalocean_droplet.mattermost_db.ipv4_address}"
+  value = "${module.db.mattermost_db_ip}"
 }
 
 output "mattermost_server" {
-  value = "${digitalocean_droplet.mattermost_server.ipv4_address}"
+  value = "${module.server.mattermost_server_ip}"
 }
 
 output "DNS" {

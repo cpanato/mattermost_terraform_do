@@ -24,3 +24,4 @@ chmod -R g+w /opt/mattermost
 
 rm /opt/mattermost/config/config.json
 rm /etc/nginx/sites-enabled/default
+

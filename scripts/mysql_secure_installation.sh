@@ -7,9 +7,11 @@ MYSQL_ROOT_PASSWORD=root
 SECURE_MYSQL=$(expect -c "
 set timeout 10
 spawn mysql_secure_installation
-expect \"Enter current password for root (enter for none):\"
-send \"$MYSQL\r\"
-expect \"Change the root password?\"
+expect \"Enter current password for root:\"
+send \"$MYSQL_ROOT_PASSWORD\r\"
+expect \"Would you like to setup VALIDATE PASSWORD plugin?\"
+send \"n\r\"
+expect \"Change the password for root ?\"
 send \"n\r\"
 expect \"Remove anonymous users?\"
 send \"y\r\"

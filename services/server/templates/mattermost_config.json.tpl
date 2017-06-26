@@ -1,6 +1,6 @@
 {
     "ServiceSettings": {
-        "SiteURL": "http://example.com",
+        "SiteURL": "http://mattermost.undergroundtest.tech",
         "LicenseFileLocation": "",
         "ListenAddress": ":8065",
         "ConnectionSecurity": "",
